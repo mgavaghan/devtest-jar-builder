@@ -3,7 +3,10 @@
 
 	<groupId>com.ca</groupId>
 	<artifactId>devtest</artifactId>
-	<version>10.1</version>
+    <!--
+        TODO change this to the version of DevTest you installed.
+    -->
+	<version>10.2</version>
 	<packaging>jar</packaging>
 
 	<name>com.ca:devtest</name>
@@ -41,10 +44,16 @@
          <plugin>
             <groupId>org.gavaghan</groupId>
             <artifactId>devtest-maven-plugin</artifactId>
-            <version>0.2.1-SNAPSHOT</version>
+            <version>0.3.0</version>
             <configuration>
-              <devtest-home>C:\Program Files\CA\DevTest\10.1</devtest-home>
-			  <devtest-version>10.1</devtest-version>
+              <!--
+                  TODO change this to the location DevTest is installed.
+              -->
+              <devtest-home>C:\Program Files\CA\DevTest\10.2</devtest-home>
+              <!--
+                  TODO change this to the version of DevTest you installed.
+              -->
+			  <devtest-version>10.2</devtest-version>
             </configuration>
             <executions>
                <execution>
