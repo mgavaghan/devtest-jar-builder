@@ -6,7 +6,7 @@
     <!--
         TODO change this to the version of DevTest you installed.
     -->
-	<version>10.2</version>
+	<version>10.5</version>
 	<packaging>jar</packaging>
 
 	<name>com.ca:devtest</name>
@@ -46,14 +46,11 @@
             <artifactId>devtest-maven-plugin</artifactId>
             <version>0.3.0</version>
             <configuration>
-              <!--
-                  TODO change this to the location DevTest is installed.
-              -->
-              <devtest-home>C:\Program Files\CA\DevTest\10.2</devtest-home>
+              <devtest-home>${devtest.home}</devtest-home>
               <!--
                   TODO change this to the version of DevTest you installed.
               -->
-			  <devtest-version>10.2</devtest-version>
+			  <devtest-version>10.5</devtest-version>
             </configuration>
             <executions>
                <execution>
